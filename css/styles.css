@@ -32,11 +32,13 @@ link {
   align-items: center;
   margin: 0px auto;
   padding: 0 20px;
+  position: relative;
 }
-
 .about {
   background-color: #fff5f6;
-  position: relative;
+  position: absolute;
+  z-index: auto;
+  width: 100%;
 }
 .about__above-title {
   font-family: "Titan One";
@@ -61,6 +63,10 @@ link {
   color: #d41443;
   padding-top: 16px;
   padding-bottom: 50px;
+}
+.about__list {
+    position: relative;
+    z-index: 1000;
 }
 .about__item {
   display: flex;
@@ -116,8 +122,10 @@ link {
 .about__milk {
   width: 100%;
   position: absolute;
-  bottom: 61px;
   max-height: 133px;
+  left: 0;
+  bottom: 61px;
+  z-index: 10;
 }
 .about__milk--desktop {
     display: none;
@@ -185,8 +193,10 @@ link {
     display: block;
     width: 100%;
     position: absolute;
+    left: 0;
     bottom: 0px;
     max-height: 534px;
+    z-index: 10;
 }
   .about__list {
     display: flex;
